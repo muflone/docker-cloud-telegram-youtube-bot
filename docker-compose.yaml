@@ -1,0 +1,15 @@
+services:
+  telegram-youtube-bot:
+    image: ilmuflone/telegram-youtube-bot:0.1.0
+    restart: unless-stopped
+    networks:
+      - default
+    env_file:
+      - ./app.env
+
+networks:
+  default:
+    name: telegram-youtube-bot
+    driver: bridge
+    enable_ipv6: false
+
