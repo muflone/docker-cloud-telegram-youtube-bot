@@ -1,5 +1,6 @@
 services:
-  telegram-youtube-bot:
+  app:
+    container_name: youtube_bot
     image: ilmuflone/telegram-youtube-bot:0.1.0
     restart: unless-stopped
     networks:
@@ -9,7 +10,7 @@ services:
 
 networks:
   default:
-    name: telegram-youtube-bot
+    name: youtube_bot
     driver: bridge
     enable_ipv6: false
 
