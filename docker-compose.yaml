@@ -1,7 +1,7 @@
 services:
   app:
     container_name: youtube_bot
-    image: ilmuflone/telegram-youtube-bot:0.1.0
+    image: ilmuflone/telegram-youtube-bot:0.1.1
     restart: unless-stopped
     networks:
       - default
